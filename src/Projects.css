@@ -200,7 +200,7 @@
 
 @media (max-width: 600px) {
     .projects-section {
-        padding: 60px 20px;
+        padding: 60px 20px 120px;
     }
 
     .projects-title {
