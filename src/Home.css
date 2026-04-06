@@ -1,0 +1,325 @@
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+
+    padding: 0 80px;
+}
+
+.image-frame {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #1c2c6b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    /* สำคัญ */
+
+    box-shadow:
+        0 0 25px #00cfff,
+        0 0 60px rgba(0, 200, 255, 0.45);
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+}
+
+#profile1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ให้รูปเต็มกรอบ */
+    border-radius: 50%;
+    /* ให้รูปกลม */
+    display: block;
+}
+
+/* text side */
+.hero-text {
+    max-width: 650px;
+}
+
+/* title */
+.title {
+    font-size: 64px;
+
+    background: linear-gradient(90deg,
+            #00cfff,
+            #7a5cff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+}
+
+/* subtitle */
+.subtitle {
+    font-size: 24px;
+    color: #e5e5e5;
+
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 0.2s;
+}
+
+/* description */
+.desc {
+    font-size: 18px;
+
+    color: #cfcfcf;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 0.4s;
+}
+
+/* button */
+.btn {
+    padding: 16px 32px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(90deg,
+            #00cfff,
+            #0066ff);
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: .3s;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 140, 255, 0.4);
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #00cfff, #0066ff);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 140, 255, 0.35);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-box {
+    width: 74px;
+    height: 74px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+}
+
+.social-box:hover {
+    transform: translateY(-6px);
+}
+
+.social-box img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.social-box-wide {
+    width: 220px;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 0 24px;
+}
+
+.social-box-wide span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+}
+
+
+.social-tooltip-bar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* ปุ่ม */
+.icon-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #ffffff;
+    color: #222;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transition: 0.35s;
+
+    padding: 0 18px;
+    transition: .3s;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.icon-btn svg {
+    font-size: 26px;
+    min-width: 26px;
+}
+
+/* text */
+.icon-btn span {
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.35s;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* hover expand */
+.icon-btn:hover {
+    width: 180px;
+    justify-content: flex-start;
+    transform: translateY(-4px);
+}
+
+.icon-btn:hover span {
+    max-width: 110px;
+    opacity: 1;
+}
+
+/* colors */
+.instagram:hover {
+    background: #ffeef2;
+    color: #e1306c;
+}
+
+.facebook:hover {
+    background: #eaf2ff;
+    color: #1877f2;
+}
+
+.github:hover {
+    background: #f3f3f3;
+    color: #000;
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        padding: 60px 40px;
+        gap: 50px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .social-tooltip-bar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .image-frame {
+        width: 240px;
+        height: 240px;
+    }
+}
